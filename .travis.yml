@@ -1,4 +1,7 @@
 sudo: false
 
+before_install:
+  - gem install bundler
+  - bundle install
 script:
   - ./build_scripts/build.sh
